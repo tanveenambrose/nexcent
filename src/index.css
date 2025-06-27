@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme{
+ 
+            --color-nautralSilver: #F5F7FA;
+            --color-nautralDGrey: #4D4D4D;
+            --color-brandPrimary: #4CAF4F;
+            --color-nautralGrey: #717171;
+        
+}
