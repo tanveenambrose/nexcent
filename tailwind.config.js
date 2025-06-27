@@ -6,12 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-        colors: {
-            'nautralSilver': '#F5F7FA',
-            'nautralDGrey': '#4D4D4D',
-            'brandPrimary': '#4CAF4F',
-            'nautralGrey': '#717171',
-        },
     },
   },
   plugins: [],

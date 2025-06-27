@@ -3,10 +3,9 @@
 
 
 @theme {
-  --color-nautralSilver: #F5F7FA;
-  --color-nautralDGrey: #4D4D4D;
+  --color-neutralSilver: #F5F7FA;
+  --color-neutralDGrey: #4D4D4D;
   --color-brandPrimary: #4CAF4F;
-  --color-nautralGrey: #717171;
+  --color-neutralGrey: #717171;
   --font-now: "Inter", "sans-serif";
 }
-
