@@ -23,7 +23,7 @@ const Navbar = () => {
         window.addEventListener('scroll',handleScroll);
 
         return ()=> {
-            window.addEventListener('scroll',handleScroll);
+            window.removeEventListener('scroll',handleScroll);
         }
     },[]);
 
@@ -70,7 +70,7 @@ const Navbar = () => {
             {/* nav items for mobile devices */}
             <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${isMenuOpen ? "block fixed top-0 right-0 left-0 " : "hidden"}`}>
                  {
-                    navItems.map(({link, path}) =><Link key={path} spy={true} smooth={true} offset={-100} to={path} className='block text-base hover:text-brandPrimary text-white first:font-medium'>{link}</Link>)
+                    navItems.map(({link, path}) =><Link key={path} spy={true} smooth={true} offset={-100} to={path} className='block text-base  http://localhost:5173/hover:text-brandPrimary text-white first:font-medium'>{link}</Link>)
                 }
             </div>
         </nav>

@@ -29,11 +29,11 @@ const Services = () => {
             <p className='text-neutralGrey text-sm'>Who is Nextcent suitable for?</p>
         </div>
       {/* cards */}
-      <div>
+      <div className='mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 '>
         {
-          services.map(service => <div key={service.id} >
+          services.map(service => <div key={service.id} className='px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 shadow-2xl cursor-pointer hover:-translate-y-5 border-0 rounded-3xl hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full'>
             <div>
-              <div><img src={service.image} alt="" /></div>
+              <div className='flex items-center justify-center mb-4'><img src={service.image} alt="" className='h-14 w-24'/></div>
               <h4 className='text-2xl font-bold text-neutralDGrey mb-2 px-2'>{service.title}</h4>
               <p className='text-sm text-neutralGrey'>{service.description}</p>
             </div>
