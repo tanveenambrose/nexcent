@@ -1,5 +1,9 @@
 import React from 'react'
 import AboutIcon from '../assets/icons/aboutIcon.svg'
+import member from '../assets/icons/members.svg'
+import club from '../assets/icons/clubs.svg'
+import Event from '../assets/icons/event.svg'
+import payment from '../assets/icons/payments.svg'
 
 const About = () => {
   return (
@@ -16,9 +20,43 @@ const About = () => {
       {/* company status */}
       <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16'>
         <div>
-          <div>
-            <h1 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5'>Helping a local <br /> <span className='text-brandPrimary'>business reinvent itself</span></h1>
+          <div className='md:w-1/2'>
+            <h1 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3'>Helping a local  <span className='text-brandPrimary'>business reinvent itself</span></h1>
             <p className='md:w-3/4 text-sm text-neutralGrey mb-8'>We reached here with our hard work and dedication</p>
+          </div>
+
+          {/* status */}
+          <div>
+            <div>
+              <div className='flex items-center gap-4 '>
+                <img src={member} alt="" />
+                <div>
+                  <h4 className='text-2xl font-semibold text-neutralDGrey'>2,232,564</h4>
+                  <p>Members</p>
+                </div>
+              </div>
+              <div className='flex items-center gap-4 '>
+                <img src={club} alt="" />
+                <div>
+                  <h4 className='text-2xl font-semibold text-neutralDGrey'>46,328</h4>
+                  <p>Clubs</p>
+                </div>
+              </div>
+              <div className='flex items-center gap-4 '>
+                <img src={Event} alt="" />
+                <div>
+                  <h4 className='text-2xl font-semibold text-neutralDGrey'>828,867</h4>
+                  <p>Event Bookings</p>
+                </div>
+              </div>
+              <div className='flex items-center gap-4 '>
+                <img src={payment} alt="" />
+                <div>
+                  <h4 className='text-2xl font-semibold text-neutralDGrey'>1,926,436</h4>
+                  <p>Payments</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
