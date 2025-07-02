@@ -18,16 +18,16 @@ const About = () => {
       </div>
 
       {/* company status */}
-      <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16'>
-        <div>
-          <div className='md:w-1/2'>
+      <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto  bg-neutralSilver py-16'>
+        <div className='flex justify-around md:flex-row flex-col items-center'>
+          <div className='md:w-1/2 text-center sm:text-start'>
             <h1 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-2/3'>Helping a local  <span className='text-brandPrimary'>business reinvent itself</span></h1>
             <p className='md:w-3/4 text-sm text-neutralGrey mb-8'>We reached here with our hard work and dedication</p>
           </div>
 
           {/* status */}
-          <div>
-            <div>
+          <div className='md:1/2'>
+            <div className='space-y-8 grid sm:grid-cols-2 gap-12'>
               <div className='flex items-center gap-4 '>
                 <img src={member} alt="" />
                 <div>
@@ -36,7 +36,7 @@ const About = () => {
                 </div>
               </div>
               <div className='flex items-center gap-4 '>
-                <img src={club} alt="" />
+                <img src={club} alt="" className='w-14'/>
                 <div>
                   <h4 className='text-2xl font-semibold text-neutralDGrey'>46,328</h4>
                   <p>Clubs</p>
@@ -49,7 +49,7 @@ const About = () => {
                   <p>Event Bookings</p>
                 </div>
               </div>
-              <div className='flex items-center gap-4 '>
+              <div className='flex items-center gap-4 -mt-8 ml-2'>
                 <img src={payment} alt="" />
                 <div>
                   <h4 className='text-2xl font-semibold text-neutralDGrey'>1,926,436</h4>
