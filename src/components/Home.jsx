@@ -4,7 +4,7 @@ import banner1 from '../assets/Illustration.svg'
 const Home = () => {
 
   return (
-   <div className='bg-neutralSilver font-now'>
+   <div className='bg-white font-now'>
 
 
 
