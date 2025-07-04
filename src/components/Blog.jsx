@@ -14,13 +14,13 @@ const Blog = () => {
       </div>
 
       {/* all blogs  */}
-      <div>
+      <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-between items-center pt-8'>
         {
-            blogs.map(blog => <div key={blog.id}>
+            blogs.map(blog => <div key={blog.id} className='mx-auto relative flex flex-col items-center  mb-12 cursor-pointer'>
                 <img src={blog.image} alt="" />
-                <div>
+                <div className=' px-4 py-2 border-4 absolute left-0 right-0 -bottom-16 bg-white w-3/4 mx-auto text-center rounded-2xl shadow-2xl'>
                     <h3 className='font-semibold text-sm text-neutralGrey'>{blog.title}</h3>
-                    <div className=''>
+                    <div className='flex justify-center items-center'>
                              <a href="" className='font-bold flex text-brandPrimary hover:text-neutral-600'>Readmore<GoArrowRight className='w-8 mt-1'/></a>
                         </div>
                 </div>
