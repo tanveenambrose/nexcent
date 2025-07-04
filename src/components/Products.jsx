@@ -25,8 +25,8 @@ const Products = () => {
                 <h5 className='text-brandPrimary text-xl font-semibold mb-2'>Tanveen Ambrose</h5>
                 <p className='text-sm text-gray-400'>British Dragon Boat Racing Association</p>
 
-                <div>
-                  <div className='flex flex-wrap justify-between items-center'>
+                <div className=''>
+                  <div className='flex flex-wrap items-center gap-8'>
                     <img src="/src/assets/icons/company1.svg" alt="" />
                     <img src="/src/assets/icons/company2.svg" alt="" />
                     <img src="/src/assets/icons/company3.svg" alt="" />
