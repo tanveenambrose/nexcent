@@ -1,6 +1,7 @@
 import React from 'react'
 import mobileLogo from '../assets/icons/mobile-logo.svg';
 import { GoArrowRight } from "react-icons/go";
+import tesla from '../assets/icons/tesla.svg';
 
 const Products = () => {
   return (
@@ -18,7 +19,9 @@ const Products = () => {
             {/* company info */}
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16'>
               <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
-                <div className='md:w-1/3'></div>
+                <div className='md:w-1/3 flex justify-center items-center'>
+                <img src={tesla} className='w-80 h-80' alt="" />
+                </div>
                 <div className='md:w-2/3 mx-auto'>
                 <p className='md:w-4/5 text-sm text-neutralGrey mb-8 leading-7'>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
                 </p>
