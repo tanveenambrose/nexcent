@@ -7,7 +7,7 @@ import payment from '../assets/icons/payments.svg'
 
 const About = () => {
   return (
-    <div className='bg-white font-now text-neutralGrey'>
+    <div className='bg-white font-now text-neutralGrey' id='about'>
       <div className='md:w-11/12 mx-auto flex items-center justify-between md:flex-row flex-col mb-6'>
         <div className='flex-1 flex justify-center items-center'><img src={AboutIcon} alt="" /></div>
         <div className='flex-1 md:w-3/5 mx-auto text-center md:text-start'>

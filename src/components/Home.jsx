@@ -4,7 +4,7 @@ import banner1 from '../assets/Illustration.svg'
 const Home = () => {
 
   return (
-   <div className='bg-white font-now'>
+   <div className='bg-white font-now' id='home'>
 
 
 
@@ -61,18 +61,7 @@ const Home = () => {
     </div>
   </div>
 
-
-
-
 </div>
-
-
-
-
-
-
-
-
    </div>
   )
 }
