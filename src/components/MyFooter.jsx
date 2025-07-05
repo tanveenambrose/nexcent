@@ -19,7 +19,7 @@ const MyFooter = () => {
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
-            <a href="" className='text-2xl font-semibold flex items-center space-x-3'><img src={Logo} alt="" className='w-10 inline-block items-center' /><span className='text-[#263238]'>Nexcent</span></a>
+            <a href="" className='text-2xl font-semibold flex items-center space-x-3'><img src={Logo} alt="" className='w-10 inline-block items-center' /><span className='text-[#e5eaec]'>Nexcent</span></a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
