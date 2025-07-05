@@ -4,17 +4,29 @@ import member from '../assets/icons/members.svg'
 import club from '../assets/icons/clubs.svg'
 import Event from '../assets/icons/event.svg'
 import payment from '../assets/icons/payments.svg'
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <div className='bg-white font-now text-neutralGrey' id='about'>
       <div className='md:w-11/12 mx-auto flex items-center justify-between md:flex-row flex-col mb-6'>
-        <div className='flex-1 flex justify-center items-center'><img src={AboutIcon} alt="" /></div>
-        <div className='flex-1 md:w-3/5 mx-auto text-center md:text-start'>
+        <motion.div
+         initial={{opacity: 0, x:-200}}
+      transition={{duration: 1}}
+      whileInView={{opacity: 1, x:0 }}
+      viewport={{once: true}}
+         className='flex-1 flex justify-center items-center'><img src={AboutIcon} alt="" /></motion.div>
+
+        <motion.div
+         initial={{opacity: 0, x:200}}
+      transition={{duration: 1}}
+      whileInView={{opacity: 1, x:0 }}
+      viewport={{once: true}}
+         className='flex-1 md:w-3/5 mx-auto text-center md:text-start'>
             <h1 className='text-4xl text-neutralDGrey font-semibold mb-4 md:w-4/5'>The unseen of spending three years at Pixelgrade</h1>
             <p className='md:w-3/4 text-sm text-neutralGrey mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
             <button className='btn-sexo'>Learn More</button>
-        </div>
+        </motion.div>
       </div>
 
       {/* company status */}

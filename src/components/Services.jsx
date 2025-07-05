@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Services = () => {
   const services = [
@@ -12,7 +13,13 @@ const Services = () => {
         <h1 className='text-4xl font-semibold mb-2'>Our Clients</h1>
         <p className='text-neutralGrey text-sm'>We have been working with some Foetune 500+ clients</p>
         {/* company logo */}
-        <div className='my-12 flex flex-wrap justify-between items-center gap-8'>
+        <motion.div
+        initial={{opacity: 0, y:200}}
+      transition={{duration: 2}}
+      whileInView={{opacity: 1, y:0 }}
+      viewport={{once: true}}
+     
+         className='my-12 flex flex-wrap justify-between items-center gap-8'>
             <img src="/src/assets/icons/company1.svg" alt="" />
             <img src="/src/assets/icons/company2.svg" alt="" />
             <img src="/src/assets/icons/company3.svg" alt="" />
@@ -20,7 +27,7 @@ const Services = () => {
             <img src="/src/assets/icons/company5.svg" alt="" />
             <img src="/src/assets/icons/company6.svg" alt="" />
             <img src="/src/assets/icons/company7.svg" alt="" />
-        </div>
+        </motion.div>
         </div>
 
         {/* services card */}
@@ -29,7 +36,13 @@ const Services = () => {
             <p className='text-neutralGrey text-sm'>Who is Nextcent suitable for?</p>
         </div>
       {/* cards */}
-      <div className='mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 '>
+      <motion.div
+      initial={{opacity: 0, x:-100}}
+      transition={{duration: 3}}
+      whileInView={{opacity: 1, x:0 }}
+      viewport={{once: true}}
+     
+       className='mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 '>
         {
           services.map(service => <div key={service.id} className='px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 shadow-2xl cursor-pointer hover:-translate-y-5 border-0 rounded-3xl hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full'>
             <div>
@@ -39,7 +52,7 @@ const Services = () => {
             </div>
           </div>)
         }
-      </div>
+      </motion.div>
     </div>
   )
 }

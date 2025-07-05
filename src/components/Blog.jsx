@@ -1,5 +1,7 @@
 import React from 'react'
 import { GoArrowRight } from "react-icons/go";
+import { motion } from 'framer-motion';
+
 const Blog = () => {
     const blogs =[
         {id:1, title: "Creating Streamlined Safeguarding Processes with OneRen", image: "/src/assets/icons/blog1.svg"},
@@ -14,7 +16,12 @@ const Blog = () => {
       </div>
 
       {/* all blogs  */}
-      <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-between items-center pt-8'>
+      <motion.div
+      initial={{opacity: 0, y:200, x:-200}}
+      transition={{duration: 1}}
+      whileInView={{opacity: 1, x:0, y:0 }}
+      viewport={{once: true}}
+       className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-between items-center pt-8'>
         {
             blogs.map(blog => <div key={blog.id} className='mx-auto relative flex flex-col items-center  mb-12 cursor-pointer'>
                 <img src={blog.image} alt="" className='w-sm hover:scale-90 transition-all duration-500' />
@@ -26,7 +33,7 @@ const Blog = () => {
                 </div>
             </div>)
         }
-      </div>
+      </motion.div>
     </div>
   )
 }

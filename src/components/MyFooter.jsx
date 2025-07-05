@@ -23,17 +23,19 @@ const MyFooter = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <FooterTitle title="about" />
+              <FooterTitle title="About Us" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Flowbite</FooterLink>
-                <FooterLink href="#">Tailwind CSS</FooterLink>
+                <FooterLink href="#home">Home</FooterLink>
+                <FooterLink href="#services">Service</FooterLink>
+                <FooterLink href="#about">About</FooterLink>
+                <FooterLink href="#product">Product</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
               <FooterTitle title="Follow us" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Github</FooterLink>
-                <FooterLink href="#">Discord</FooterLink>
+                <FooterLink href="https://github.com/tanveenambrose">Github</FooterLink>
+                <FooterLink href="https://www.facebook.com/rakibulalamtanveen/">Facebook</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>

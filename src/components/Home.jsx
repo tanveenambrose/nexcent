@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import banner1 from '../assets/Illustration.svg'
+import { motion } from 'framer-motion';
 
 const Home = () => {
 
@@ -13,12 +14,22 @@ const Home = () => {
 
   <div id="slide1" className="carousel-item relative flex w-full items-center justify-center pt-24">
     <div className='flex items-center flex-col md:flex-row-reverse '>
-      <div className='flex-1 flex justify-center'><img className='' src={banner1} alt="" /></div>
-      <div className='flex-1 md:w-1/2 pb-10 pt-10'>
+      <motion.div
+      initial={{opacity: 0, y:100, x:-200}}
+      transition={{duration: 1}}
+      whileInView={{opacity: 1, x:0, y:0 }}
+      viewport={{once: true}}
+       className='flex-1 flex justify-center'><img className='' src={banner1} alt="" /></motion.div>
+      <motion.div
+      initial={{opacity: 0, y:-200, x:-200}}
+      transition={{duration: 1}}
+      whileInView={{opacity: 1, x:0, y:0 }}
+      viewport={{once: true}}
+       className='flex-1 md:w-1/2 pb-10 pt-10'>
         <h1 className='text-neutralDGrey text-5xl font-semibold mb-4 text-center leading-sung'>Lessons and insights <span className='text-brandPrimary leading-snug'>from 8 years</span></h1>
         <p className='text-neutralGrey text-base mb-8 text-center'>Where to grow your business as a photographer: site or social media?</p>
         <button className='btn-sexo ml-10'>Register</button>
-        </div>
+        </motion.div>
     </div>
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
       <a href="#slide3" className="btn btn-circle border-0 hover:border-2 bg-transparent text-black">❮</a>
