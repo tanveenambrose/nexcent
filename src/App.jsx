@@ -9,6 +9,7 @@ import Blog from './components/Blog';
 import Newsletter from './components/Newsletter';
 import MyFooter from './components/MyFooter';
 import Contact from './components/Contact';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <Newsletter/>
     <Contact/>
     <MyFooter/>
+    <ToastContainer style={{ marginTop: '80px' }} />
     </>
   );
 }

@@ -47,7 +47,7 @@ const MyFooter = () => {
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <FooterCopyright href="#" by="Flowbite™" year={2022} />
+          <FooterCopyright href="#" by=" Copyright 2025 © GreatStack. All Right Reserved.™" />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <FooterIcon href="https://www.facebook.com/rakibulalamtanveen/" target='_blank' icon={BsFacebook} />
             <FooterIcon href="https://www.instagram.com/_aila_tanu_/" target='_blank' icon={BsInstagram} />
