@@ -4,7 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 import flowbiteReact from "flowbite-react/plugin/vite";
 
 // https://vite.dev/config/
+const isProduction = process.env.NODE_ENV === 'production';
+
 export default defineConfig({
-  base: '/nextcent/',
+  base: isProduction ? '/nexcent/' : '/',
   plugins: [react(), tailwindcss(), flowbiteReact()],
 })

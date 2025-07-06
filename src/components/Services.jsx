@@ -1,5 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import company1 from '../assets/icons/company1.svg';
+import company2 from '../assets/icons/company2.svg';
+import company3 from '../assets/icons/company3.svg';
+import company4 from '../assets/icons/company4.svg';
+import company5 from '../assets/icons/company5.svg';
+import company6 from '../assets/icons/company6.svg';
+import company7 from '../assets/icons/company7.svg';
 
 const Services = () => {
   const services = [
@@ -20,13 +27,13 @@ const Services = () => {
       viewport={{once: true}}
      
          className='my-12 flex flex-wrap justify-between items-center gap-8'>
-            <img src="/src/assets/icons/company1.svg" alt="" />
-            <img src="/src/assets/icons/company2.svg" alt="" />
-            <img src="/src/assets/icons/company3.svg" alt="" />
-            <img src="/src/assets/icons/company4.svg" alt="" />
-            <img src="/src/assets/icons/company5.svg" alt="" />
-            <img src="/src/assets/icons/company6.svg" alt="" />
-            <img src="/src/assets/icons/company7.svg" alt="" />
+              <img src={company1} alt="" />
+              <img src={company2} alt="" />
+              <img src={company3} alt="" />
+              <img src={company4} alt="" />
+              <img src={company5} alt="" />
+              <img src={company6} alt="" />
+              <img src={company7} alt="" />
         </motion.div>
         </div>
 
