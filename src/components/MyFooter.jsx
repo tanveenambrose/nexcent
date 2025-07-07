@@ -15,7 +15,7 @@ import { BsFacebook, BsGithub, BsInstagram, } from "react-icons/bs";
 
 const MyFooter = () => {
   return (
-    <Footer container>
+    <Footer container className='bg-[#1e2939] text-neutralSilver'>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
