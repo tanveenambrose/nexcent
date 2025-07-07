@@ -10,6 +10,7 @@ import company4 from '../assets/icons/company4.svg';
 import company5 from '../assets/icons/company5.svg';
 import company6 from '../assets/icons/company6.svg';
 import company7 from '../assets/icons/company7.svg';
+
 const Products = () => {
   return (
     <div className='bg-white font-now text-neutralDGrey' id='product'>
