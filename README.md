@@ -6,7 +6,7 @@
 <h3>Navigation bar in different screen-size :</h3>
 <img src="./public/navbar.png">
 <img src="./public/small-navbar.png">
-<img src="./public/mobile-navbar"></br>
+<img src="./public/mobile-navbar.png"></br>
 <h3>This is the footer :</h3>
 <img src="./public/footer.png"></br>
 <h3>Carousel :</h3>
