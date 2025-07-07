@@ -1,12 +1,16 @@
 import React from 'react'
 import { GoArrowRight } from "react-icons/go";
 import { motion } from 'framer-motion';
+import blog1 from '/src/assets/icons/blog1.svg';
+import blog2 from '/src/assets/icons/blog2.svg';
+import blog3 from '/src/assets/icons/blog3.svg';
+
 
 const Blog = () => {
     const blogs =[
-        {id:1, title: "Creating Streamlined Safeguarding Processes with OneRen", image: "/src/assets/icons/blog1.svg"},
-        {id:2, title: "What are your safeguarding responsibilities and how can you manage them?", image: "/src/assets/icons/blog2.svg"},
-        {id:3, title: "Revamping the Membership Model with Triathlon Australia", image: "/src/assets/icons/blog3.svg"},
+        {id:1, title: "Creating Streamlined Safeguarding Processes with OneRen", image: blog1 },
+        {id:2, title: "What are your safeguarding responsibilities and how can you manage them?", image: blog2 },
+        {id:3, title: "Revamping the Membership Model with Triathlon Australia", image: blog3 },
     ];
   return (
     <div className='font-now bg-white py-10' id='testimonial'>
