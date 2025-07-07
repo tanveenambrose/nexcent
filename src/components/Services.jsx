@@ -12,10 +12,10 @@ import national from '/src/assets/icons/national.svg';
 import clubs from '/src/assets/icons/clubs.svg';
 
 const Services = () => {
-  const services = [
-    {id: 1, title: "Membership Organisatons", description: "Our membership management software provides full automation of membership renewals and payments", image: {membership}},
-    {id: 2, title: "National Associations", description: "Our membership management software provides full automation of membership renewals and payments", image: {national}},
-    {id: 3, title: "Clubs And Groups", description: "Our membership management software provides full automation of membership renewals and payments", image: {clubs}},
+const services = [
+    {id: 1, title: "Membership Organisatons", description: "Our membership management software provides full automation of membership renewals and payments", image: membership},
+    {id: 2, title: "National Associations", description: "Our membership management software provides full automation of membership renewals and payments", image: national},
+    {id: 3, title: "Clubs And Groups", description: "Our membership management software provides full automation of membership renewals and payments", image: clubs},
   ]
   return (
     <div className='md:px-14 px-4 py-16 max-w-screen-2xl mx-auto bg-white font-now text-neutralDGrey' id='services'>
